@@ -1,0 +1,44 @@
+{
+  "id": "1811919",
+  "name": "20200511",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1358300",
+      "name": "闪电",
+      "font_class": "shandian",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "2115112",
+      "name": "创建话题",
+      "font_class": "chuangjianhuati",
+      "unicode": "e64b",
+      "unicode_decimal": 58955
+    },
+    {
+      "icon_id": "2599032",
+      "name": "表情",
+      "font_class": "emoji",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "7122249",
+      "name": "图片",
+      "font_class": "tupian",
+      "unicode": "e76d",
+      "unicode_decimal": 59245
+    },
+    {
+      "icon_id": "7531569",
+      "name": "视频",
+      "font_class": "video-",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    }
+  ]
+}

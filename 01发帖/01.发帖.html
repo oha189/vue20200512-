@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cn.vuejs.org/js/vue.js"></script>
+    <title>微博发帖</title>
+    <link rel="stylesheet" href="./css/01.css">
+    <link rel="stylesheet" href="./font/iconfont.css">
+</head>
+<body>
+    <div id="fatie">
+        <div style="color: #8D9CCB;">---请说出你的故事---</div>
+        <input type="text" v-model="val" />
+        <div class="dibu">
+            <div class="yinyong">
+                <p class="iconfont icon-emoji">表情</p>
+                <p class="iconfont icon-tupian">图片</p>
+                <p class="iconfont icon-video-">视频</p>
+                <p class="iconfont icon-chuangjianhuati">话题</p>
+                <p class="iconfont icon-shandian">头条文章</p>
+            </div>
+            <button v-if="val == ''" class="fabu" v-on:click='publish'>发布</button>
+                <button v-if="val != ''" class="fabu" style="background:#ffa502" v-on:click='publish'>发布</button>
+        </div>
+        <ul v-if='txt.length != 0'>
+            <li v-for="item,index in txt" >
+                {{item}}
+                <button style="float: right;" class="shanchu" v-on:click="shan(index)">删除</button>
+            </li>
+        </ul>
+    </div>
+</body>
+<script>
+    let vm = new Vue({
+        el:'#fatie',
+        data:{
+            val:'',
+            txt:[]
+        },
+        methods:{
+            publish:function(){
+                if(this.val != ''){
+                    this.txt.unshift(this.val);
+                    this.val = '';  
+                } else {
+                    alert('请输入有效内容！！');
+                }
+            },
+            shan:function(index){
+                this.txt.splice(index,1);
+            }
+        }
+    })
+</script>
+</html>

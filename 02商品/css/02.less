@@ -1,0 +1,46 @@
+body{
+    background: #F7F7F7;
+    #vm {
+        width: 600px;
+        padding:10px;
+        margin: auto;
+        border: 1px solid #ECEEF0;
+        display:flex;   //弹性布局
+        flex-direction:column;  //垂直排序，起点在上
+        justify-content:space-between;     // 主轴基准，两端对齐，项目间隔相等
+        flex-wrap:wrap; //允许换行
+        input {
+            margin: 10px 0;
+            height: 20px;
+        }
+        
+        button {
+            height: 35px;
+        }
+      
+        .tab {
+            margin-top:10px;
+            div{
+                border-top: 1px solid #E2E4E8;
+                border-bottom: 1px solid #E2E4E8;
+            }
+            .biaoqian {
+                display:flex;   //弹性布局
+                justify-content:space-around;   //以主轴为基准，项目两侧间隔相等,平均分配
+                p {
+                    flex-grow:1;    //定义项目的放大比例，都为1，平分剩余空间
+                    text-align: center; //文字居中
+                }
+            }
+      
+            .item {
+                display:flex;   //弹性布局
+                justify-content:space-around;   //以主轴为基准，剩余空间平均分配，项目两侧间隔相等
+                p {
+                    flex-grow:1;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

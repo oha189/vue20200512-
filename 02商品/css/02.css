@@ -1,0 +1,43 @@
+body {
+  background: #F7F7F7;
+}
+body #vm {
+  width: 600px;
+  padding: 10px;
+  margin: auto;
+  border: 1px solid #ECEEF0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+body #vm input {
+  margin: 10px 0;
+  height: 20px;
+}
+body #vm button {
+  height: 35px;
+}
+body #vm .tab {
+  margin-top: 10px;
+}
+body #vm .tab div {
+  border-top: 1px solid #E2E4E8;
+  border-bottom: 1px solid #E2E4E8;
+}
+body #vm .tab .biaoqian {
+  display: flex;
+  justify-content: space-around;
+}
+body #vm .tab .biaoqian p {
+  flex-grow: 1;
+  text-align: center;
+}
+body #vm .tab .item {
+  display: flex;
+  justify-content: space-around;
+}
+body #vm .tab .item p {
+  flex-grow: 1;
+  text-align: center;
+}
